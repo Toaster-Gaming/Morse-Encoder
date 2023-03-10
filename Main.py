@@ -1,3 +1,15 @@
 print("Welcome to Morse Encoder!")
 numbers = input("Numbers: ")
-def morse_encode():
+print(f"Your non-morse numbers are: {numbers}")
+def morse_encode(numbers):
+  numbers = numbers.replace("1", ".----")
+  numbers = numbers.replace("2", "..---")
+  numbers = numbers.replace("3", "...--")
+  numbers = numbers.replace("4", "....-")
+  numbers = numbers.replace("5", ".....")
+  numbers = numbers.replace("6", "-....")
+  numbers = numbers.replace("7", "--...")
+  numbers = numbers.replace("8", "---..")
+  numbers = numbers.replace("9", "----.")
+  return numbers
+morse_encode(numbers)
